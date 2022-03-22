@@ -1,0 +1,78 @@
+.header {
+   background: #000;
+   /* background-size: 150%; */
+   background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 0.25) 1px,
+      transparent 1px,
+      transparent 6px
+   );
+   background-size: 4px 4px;
+}
+
+.header-content {
+   width: 95%;
+   max-width: 1700px;
+}
+
+.title {
+   color: #fff;
+   font-family: 'Inspiration';
+   font-weight: bold;
+   font-size: 4rem;
+   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+      1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+   cursor: pointer;
+}
+
+.span-subtitle {
+   background: #d4af37;
+   color: #000;
+   text-shadow: 2px 0 0 #d4af37, -2px 0 0 #d4af37, 0 2px 0 #d4af37,
+      0 -2px 0 #d4af37, 1px 1px #d4af37, -1px -1px 0 #d4af37, 1px -1px 0 #d4af37,
+      -1px 1px 0 #d4af37;
+   font-size: 1.5rem;
+   border-radius: 0.5rem;
+   display: inline-flex;
+   position: relative;
+   top: 0.5rem;
+}
+
+.header-img-container {
+   width: 100px;
+   cursor: pointer;
+   display: none;
+}
+
+.header-img {
+   width: 100%;
+}
+
+@media only screen and (min-width: 450px) {
+   .header-img-container {
+      display: inline;
+   }
+}
+
+@media only screen and (min-width: 768px) {
+   .title {
+      font-size: 8rem;
+   }
+
+   .span-subtitle {
+      font-size: 3rem;
+      top: 0.75rem;
+   }
+
+   .header-img-container {
+      width: 150px;
+   }
+}
+
+@media only screen and (min-width: 992px) {
+   .header {
+      background-size: cover;
+      background-position: 0 5%;
+   }
+}

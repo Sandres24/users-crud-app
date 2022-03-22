@@ -1,0 +1,79 @@
+.container-new-button {
+   width: 95%;
+   max-width: 1700px;
+}
+
+.custom-btn-close:focus {
+   outline: none;
+   box-shadow: none;
+}
+
+.custom-form {
+   width: 97.5%;
+   max-width: 1700px;
+}
+
+.custom-input {
+   font-family: 'Fredoka', sans-serif;
+   transition: background 0.75s ease;
+}
+
+.input-field {
+   position: relative;
+}
+
+.eye-icon {
+   position: absolute;
+   width: fit-content;
+   right: 5.25%;
+   z-index: 10;
+   cursor: pointer;
+}
+
+.eye-icon {
+   color: #000;
+   font-size: 0.75rem;
+   top: 1.2rem;
+   right: 0.4rem;
+   transform: translateY(-50%);
+}
+
+.password-input {
+   padding: 6px 24px 6px 12px;
+}
+
+.custom-input::placeholder {
+   font-family: 'Lobster', cursive;
+}
+
+.container-buttons-submition {
+   width: 97.5%;
+}
+
+#birthday {
+   cursor: pointer;
+}
+
+.crud-span {
+   font-size: 0.75rem;
+}
+
+.custom-input:focus {
+   background: #6c757d;
+   box-shadow: none;
+}
+
+.custom-input:focus::placeholder,
+.custom-input:focus + .eye-icon {
+   color: #fff;
+}
+
+.custom-input:focus::-webkit-calendar-picker-indicator {
+   filter: invert(1);
+}
+
+@media only screen and (min-width: 768px) {
+   .field {
+      width: 50%;
+   }
+}
